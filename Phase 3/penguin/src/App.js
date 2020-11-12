@@ -1,5 +1,4 @@
 import React from 'react'
-import{ThemeProvider} from 
 
 function App() {
   return (
