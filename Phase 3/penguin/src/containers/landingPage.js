@@ -1,10 +1,14 @@
 import React from 'react'
+import MiddleBackground from '../components/Main/MiddleBackground'
+import Header from '../components/Header/Header'
 
-function landingPage(){
+function LandingPage(){
     return(
         <div>
-            test :)
+            <Header />
+            <MiddleBackground />
         </div>
     );
 }
-export default landingPage
+
+export default LandingPage
