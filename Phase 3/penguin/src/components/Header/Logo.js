@@ -20,6 +20,7 @@ const PenguinName = styled.div`
     font-weight: bold;
     line-height: 43px;
     font-size: 36px;
+    color: "#303030";
 `
 function Logo(){
     return(

@@ -5,7 +5,7 @@ import Image from '../../assests/images/monitor.png'
 const Container = styled.div`
     background-color: ${({ theme }) => theme.secondary};
     position: absolute;
-    width: 1440px;
+    right:0;
     height: 518px;
     left: 0px;
     top: 88px;

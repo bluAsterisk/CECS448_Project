@@ -8,10 +8,10 @@ import Writing from '../../assests/images/writing 1.png'
 
 const BottomContainer = styled.div`
     position: absolute;
-    width: 1440px;
+    width: auto;
     height: 518px;
-    left: 0px;
-    top: 650px;
+    padding-left: 0px;
+    padding-top: 650px;
 `
 const Column = styled.div`
     float: left;

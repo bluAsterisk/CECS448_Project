@@ -39,7 +39,7 @@ const GetStartedContainer = styled.div`
     position: absolute;
     width: 190px;
     height: 50px;
-    left: 1225px;
+    right: 30px;
     top: 21px;
 
     background: #6CA0FF;
