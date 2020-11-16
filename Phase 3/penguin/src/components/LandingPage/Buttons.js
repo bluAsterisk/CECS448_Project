@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { BrowserRouter, Route } from 'react-router-dom'
+import LoginPage from '../../containers/loginPage'
 
 const LoginContainer = styled.div`
     position: absolute;
@@ -50,15 +52,19 @@ const GetStartedContainer = styled.div`
 function Buttons(){
     return(
         <div>
-            <GetStartedContainer>
-                <Text>Get Started</Text>
-            </GetStartedContainer>
-            <LoginContainer>
-                <Text>Login</Text>
-            </LoginContainer>
-            <SignUpContainer>
-                <Text>Sign Up</Text>
-            </SignUpContainer>
+            <BrowserRouter>
+                <GetStartedContainer>
+                    <Text>Get Started</Text>
+                </GetStartedContainer>
+                <LoginContainer>
+                    <Text>Login
+                        {/*<Route path='/' component={LoginPage} />*/}
+                    </Text>
+                </LoginContainer>
+                <SignUpContainer>
+                    <Text>Sign Up</Text>
+                </SignUpContainer>
+            </BrowserRouter>
         </div>
     );
 }

@@ -6,6 +6,7 @@ function LoginPage(){
     return(
         <div>
             <Header />
+            Login
             <Buttons />
         </div>
     )
