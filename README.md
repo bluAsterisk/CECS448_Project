@@ -14,4 +14,7 @@ yarn add styled-components
 
 //to reinitialize node_module
 npm install
+
+//to set up router
+npm install react-router-dom --save
 ```
