@@ -1,7 +1,33 @@
 import React from 'react'
-import styled, { ThemeProvider } from 'styled-components'
+import styled from 'styled-components'
 import { BrowserRouter, Route } from 'react-router-dom'
-import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+
+const theme = createMuiTheme({
+    palette: {
+      default:{
+        main: '#6CA0FF',
+        contrastText: '#FFFFFF',
+      },
+      primary: {
+        main: '#9EC1FF',
+        contrastText: '#FFFFFF',
+      },
+      secondary: {
+          main: '#9A9DA6',
+          contrastText: '#FFFFFF',
+      },
+    },
+    shadows: Array(25).fill('none'),
+    typography: {
+        fontFamily: 'Pier Sans',
+        fontStyle: 'normal',
+        fontWeight: 'Bold',
+        fontSize: 20,
+        
+      },
+  });
 
 const LoginContainer = styled.div`
     position: absolute;
@@ -29,15 +55,15 @@ function Buttons(){
         <div>
             <BrowserRouter>
                 <GetStartedContainer>
-                    <Button variant='contained' id="getStarted" theme='default'>Get Started</Button>
+                        <Button variant='contained' id="getStarted" color="primary">Get Started</Button>
                 </GetStartedContainer>
                 <LoginContainer>
-                    <Button variant='contained' id="login">Login
+                    <Button variant='contained' id="login" color="secondary">Login 
                         {/*<Route path='/' component={LoginPage} />*/}
                     </Button>
                 </LoginContainer>
                 <SignUpContainer>
-                    <Button variant= 'contained' id="signup">Sign Up</Button>
+                    <Button variant= 'contained' id="signup" color = "primary">Sign Up</Button>
                 </SignUpContainer>
             </BrowserRouter>
         </div>
