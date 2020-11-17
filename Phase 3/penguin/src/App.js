@@ -1,5 +1,5 @@
 import React from 'react'
-import LandingPage from './containers/landingPage'
+import LandingPage from './containers/LandingPage'
 import{ ThemeProvider } from 'styled-components'
 import { GlobalStyles } from './styles/global'
 import { LightTheme, DarkTheme } from './styles/theme'
