@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BrowserRouter, Route } from 'react-router-dom'
+import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import LoginPage from '../../containers/loginPage'
 
 const theme = createMuiTheme({
     palette: {
@@ -25,7 +26,6 @@ const theme = createMuiTheme({
         fontStyle: 'normal',
         fontWeight: 'Bold',
         fontSize: 20,
-        
       },
   });
 
@@ -55,15 +55,31 @@ function Buttons(){
         <div>
             <BrowserRouter>
                 <GetStartedContainer>
-                        <Button variant='contained' id="getStarted" color="primary">Get Started</Button>
+                    <Button 
+                        variant='contained' 
+                        size = "large" 
+                        id="getStarted" 
+                        color="primary">
+                            Get Started
+                    </Button>
                 </GetStartedContainer>
                 <LoginContainer>
-                    <Button variant='contained' id="login" color="secondary">Login 
-                        {/*<Route path='/' component={LoginPage} />*/}
+                    <Button 
+                        variant='contained' 
+                        size = "large"
+                        id="login" 
+                        color="secondary"
+                        component = {Link}
+                        to='/login'>Login{LoginPage}
                     </Button>
                 </LoginContainer>
                 <SignUpContainer>
-                    <Button variant= 'contained' id="signup" color = "primary">Sign Up</Button>
+                    <Button variant= 'contained'
+                     size = "large" 
+                     id="signup" 
+                     color = "primary">
+                         Sign Up
+                    </Button>
                 </SignUpContainer>
             </BrowserRouter>
         </div>
