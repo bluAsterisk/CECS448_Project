@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-import Buttons from '../components/LoginPage/Buttons'
+import Header from '../Header/Header'
+import Buttons from './Buttons'
 
 function LoginPage(){
     return(

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import LoginPage from '../../containers/loginPage'
+import LoginPage from '../LoginPage/loginPage'
 
 const theme = createMuiTheme({
     palette: {
@@ -54,33 +54,16 @@ function Buttons(){
     return(
         <div>
             <BrowserRouter>
-                <GetStartedContainer>
-                    <Button 
-                        variant='contained' 
-                        size = "large" 
-                        id="getStarted" 
-                        color="primary">
-                            Get Started
-                    </Button>
-                </GetStartedContainer>
-                <LoginContainer>
-                    <Button 
-                        variant='contained' 
-                        size = "large"
-                        id="login" 
-                        color="secondary"
-                        component = {Link}
-                        to='/login'>Login{LoginPage}
-                    </Button>
-                </LoginContainer>
-                <SignUpContainer>
-                    <Button variant= 'contained'
-                     size = "large" 
-                     id="signup" 
-                     color = "primary">
-                         Sign Up
-                    </Button>
-                </SignUpContainer>
+            <GetStartedContainer>
+                <Button variant="contained" id="getStarted" theme="palette.default" >Get Started</Button>
+            </GetStartedContainer>
+            <LoginContainer>
+                <Button variant="contained" id="login" theme="palette.primary">Login 
+                </Button>
+            </LoginContainer>
+            <SignUpContainer>
+            <Button variant= "contained" id="signup" theme="primary">Sign Up</Button>
+            </SignUpContainer>
             </BrowserRouter>
         </div>
     );
