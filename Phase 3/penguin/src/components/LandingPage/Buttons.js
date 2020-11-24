@@ -63,16 +63,14 @@ function Buttons(){
                     </Button>
                 </GetStartedContainer>
                 <LoginContainer>
-                    <Link to="/loginPage">
-                        <Button 
-                            variant="contained" 
-                            id="login" 
-                            color="secondary"
-                            component={Link} to={LoginPage}
-                            >
-                                Login
-                        </Button>
-                    </Link>
+                    <Button 
+                        variant="contained" 
+                        id="login" 
+                        color="secondary"
+                        component={Link} to={LoginPage}
+                        >
+                            Login
+                    </Button>
                 </LoginContainer>
                 <SignUpContainer>
                     <Button 

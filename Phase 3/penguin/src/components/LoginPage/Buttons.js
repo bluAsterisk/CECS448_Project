@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid';
+import {Link} from 'react-router-dom'
 
 
 function Buttons(){
@@ -8,7 +9,6 @@ function Buttons(){
         <div>
             <Grid 
                 container 
-                direction="row"
                 justify="center"
                 alignItems="center" 
                 spacing={2}>
@@ -18,7 +18,7 @@ function Buttons(){
                         size = "large"
                         id="login" 
                         color="secondary"
-                        to='/login'>Login
+                        component={Link} to='/dashboard'>Login
                     </Button>
                 </Grid>
                 <Grid item>
@@ -26,10 +26,14 @@ function Buttons(){
                         variant= 'contained'
                         size = "large" 
                         id="signup" 
-                        color = "primary">Sign Up
+                        color = "primary"
+                        component={Link}to='/registration'>Sign Up
                     </Button>
                 </Grid>
             </Grid>
+            <Grid item>
+                    <h2>————— OR —————</h2>
+                </Grid> 
             <Grid  
                 container 
                 direction="row"
