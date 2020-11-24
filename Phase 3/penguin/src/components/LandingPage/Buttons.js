@@ -68,7 +68,7 @@ function Buttons(){
                         <Button 
                             variant="contained" 
                             id="login" 
-                            color="default"
+                            color="secondary"
                             onClick>
                                 Login
                         </Button>

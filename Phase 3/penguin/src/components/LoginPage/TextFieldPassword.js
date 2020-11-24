@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function InputAdornments() {
+export default function TextFieldPassword() {
   const classes = useStyles();
   const [values, setValues] = React.useState({
     amount: '',

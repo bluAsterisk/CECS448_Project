@@ -1,11 +1,11 @@
 import React from 'react'
-import InputWithIcon from './TextField'
+import TextFieldPassword from './TextFieldPassword'
 import Buttons from './Buttons'
 
 function LoginPage(){
     return(
         <div>
-            <InputWithIcon />
+            <TextFieldPassword />
             <Buttons />
         </div>
     )
