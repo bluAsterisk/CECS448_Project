@@ -20,7 +20,6 @@ function LoginPage(){
                     <TextField id="input-with-icon-grid" label="Username" />
                     <AccountCircle />
                     <TextFieldPassword />
-                    <span>{" "}</span>
                     <Buttons />
                 </Grid>
             </Grid>

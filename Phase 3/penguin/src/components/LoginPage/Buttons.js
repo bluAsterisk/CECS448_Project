@@ -6,7 +6,12 @@ import Grid from '@material-ui/core/Grid';
 function Buttons(){
     return(
         <div>
-            <Grid container>
+            <Grid 
+                container 
+                direction="row"
+                justify="center"
+                alignItems="center" 
+                spacing={2}>
                 <Grid item>
                     <Button 
                         variant='contained' 
@@ -15,6 +20,8 @@ function Buttons(){
                         color="secondary"
                         to='/login'>Login
                     </Button>
+                </Grid>
+                <Grid item>
                     <Button
                         variant= 'contained'
                         size = "large" 
@@ -23,7 +30,12 @@ function Buttons(){
                     </Button>
                 </Grid>
             </Grid>
-            <Grid container>
+            <Grid  
+                container 
+                direction="row"
+                justify="center"
+                alignItems="center" 
+                spacing={2}>
                 <Grid item>
                     <Button
                         variant= 'contained'
@@ -33,7 +45,12 @@ function Buttons(){
                     </Button>
                 </Grid>
             </Grid>
-            <Grid container>
+            <Grid 
+                container 
+                direction="row"
+                justify="center"
+                alignItems="center" 
+                spacing={2}>
                 <Grid item>
                     <Button
                         variant= 'contained'
