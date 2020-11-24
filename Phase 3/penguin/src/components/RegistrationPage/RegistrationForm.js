@@ -96,12 +96,7 @@ const CreateAccountContainer = styled.div`
                             Create Account
                         </Button>
                     </CreateAccountContainer>
-                </Grid>  
-                <Grid item>
-                    <CreateAccountContainer>
-
-                    </CreateAccountContainer>
-                    </Grid>                      
+                </Grid>               
             </Grid>
         </div>
             
