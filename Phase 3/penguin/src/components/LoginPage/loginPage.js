@@ -1,7 +1,6 @@
 import React from 'react'
-import Header from '../components/Header/Header'
-import InputWithIcon from '../components/LoginPage/TextField'
-import Buttons from '../components/LoginPage/Buttons'
+import InputWithIcon from './TextField'
+import Buttons from './Buttons'
 
 function LoginPage(){
     return(

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import Button from '@material-ui/core/Button'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
-import LoginPage from '../../containers/loginPage'
+import loginPage from '../LoginPage/loginPage'
 
 const theme = createMuiTheme({
     palette: {
@@ -52,37 +52,38 @@ const GetStartedContainer = styled.div`
 `
 function Buttons(){
     return(
-        <div>
+        <MuiThemeProvider>
             <BrowserRouter>
+            <Route path="/LoginPage/loginPage" component={loginPage} />
                 <GetStartedContainer>
                     <Button 
-                        variant='contained' 
-                        size = "large" 
+                        variant="contained" 
                         id="getStarted" 
-                        color="primary">
+                        color="primary" >
                             Get Started
                     </Button>
                 </GetStartedContainer>
                 <LoginContainer>
-                    <Button 
-                        variant='contained' 
-                        size = "large"
-                        id="login" 
-                        color="secondary"
-                        component = {Link}
-                        to='/login'>Login{LoginPage}
-                    </Button>
+                    <Link to="/loginPage">
+                        <Button 
+                            variant="contained" 
+                            id="login" 
+                            color="default"
+                            onClick>
+                                Login
+                        </Button>
+                    </Link>
                 </LoginContainer>
                 <SignUpContainer>
-                    <Button variant= 'contained'
-                     size = "large" 
-                     id="signup" 
-                     color = "primary">
-                         Sign Up
+                    <Button 
+                        variant= "contained" 
+                        id="signup" 
+                        color="primary">
+                            Sign Up
                     </Button>
                 </SignUpContainer>
             </BrowserRouter>
-        </div>
+        </MuiThemeProvider>
     );
 }
 export default Buttons
