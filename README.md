@@ -12,6 +12,9 @@ yarn add @material-ui/core
 //for light/dark mode
 yarn add styled-components
 
+//material-iu icons
+npm install @material-ui/icons
+
 //to reinitialize node_module
 npm install
 
