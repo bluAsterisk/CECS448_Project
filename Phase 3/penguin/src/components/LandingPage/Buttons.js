@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BrowserRouter, Route, Link } from 'react-router-dom'
+import {Link } from 'react-router-dom'
+import {LoginPage, RegistrationPage } from '../../Routing'
 import Button from '@material-ui/core/Button'
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
 import loginPage from '../LoginPage/loginPage'
@@ -53,8 +54,6 @@ const GetStartedContainer = styled.div`
 function Buttons(){
     return(
         <MuiThemeProvider>
-            <BrowserRouter>
-            <Route path="/LoginPage/loginPage" component={loginPage} />
                 <GetStartedContainer>
                     <Button 
                         variant="contained" 
@@ -69,7 +68,8 @@ function Buttons(){
                             variant="contained" 
                             id="login" 
                             color="secondary"
-                            onClick>
+                            component={Link} to={LoginPage}
+                            >
                                 Login
                         </Button>
                     </Link>
@@ -78,11 +78,11 @@ function Buttons(){
                     <Button 
                         variant= "contained" 
                         id="signup" 
+                        component={Link} to={RegistrationPage}
                         color="primary">
                             Sign Up
                     </Button>
                 </SignUpContainer>
-            </BrowserRouter>
         </MuiThemeProvider>
     );
 }
