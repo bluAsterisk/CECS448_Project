@@ -12,7 +12,7 @@ function RegistrationPage(){
         <div>
             <Header/>
             <SideBar/>
-            <Grid container spacing = {6} direction = "column" justify="center" alignItems="center">
+            <Grid container spacing = {0} direction = "column" justify="center" alignItems="center">
                 <Grid item>
                     <AlternateSignupButtons/>
                 </Grid>

@@ -5,12 +5,14 @@ import TextField from '@material-ui/core/TextField';
 import TextFieldPassword from './TextFieldPassword'
 import Grid from '@material-ui/core/Grid';
 import AccountCircle from '@material-ui/icons/AccountCircle';
+import SideBar from '../RegistrationPage/SideBar';
 
 
 function LoginPage(){
     return(
         <div>
             <Header />
+            <SideBar />
             <Grid 
                 container 
                 justify ='center' 
