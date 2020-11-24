@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Button from '@material-ui/core/Button'
 
 const LoginContainer = styled.div`
     position: absolute;
@@ -50,15 +51,19 @@ const LoginGoogleContainer = styled.div`
 function Buttons(){
     return(
         <div>
-            <LoginContainer>
-                <Text>Login</Text>
-            </LoginContainer>
-            <LoginFacebookContainer>
-                <Text>Login with Facebook</Text>
-            </LoginFacebookContainer>
-            <LoginGoogleContainer>
-                <Text>Login with Google</Text>
-            </LoginGoogleContainer>
+            <Button 
+                variant='contained' 
+                size = "large"
+                id="login" 
+                color="secondary"
+                to='/login'>Login
+            </Button>
+            <Button
+                variant= 'contained'
+                size = "large" 
+                id="signup" 
+                color = "primary">Sign Up
+            </Button>
         </div>
     );
 }

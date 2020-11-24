@@ -1,12 +1,11 @@
 import React from 'react'
-import Header from '../Header/Header'
+import InputWithIcon from './TextField'
 import Buttons from './Buttons'
 
 function LoginPage(){
     return(
         <div>
-            <Header />
-            Login
+            <InputWithIcon />
             <Buttons />
         </div>
     )
