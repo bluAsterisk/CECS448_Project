@@ -14,8 +14,8 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.background.paper,
     },
     gridList: {
-      width: 500,
-      height: 450,
+      width: 1080,
+      height: 720,
     },
   }));
 
@@ -24,17 +24,21 @@ const tileData = [
    {
      img: image,
      user: 'Jeff',
-     cols: 2,
+     cols: 3,
    },
    {
     img: image,
     user: 'Emily',
-    cols: 2,
+    cols: 1,
   },
   {
     img: image,
     user: 'Ricky',
-    cols: 2,
+    cols: 1,
+  },{
+    img: image,
+    user: 'Becky',
+    cols: 1,
   },
 ];
 
@@ -43,7 +47,7 @@ export default function ChatPage(){
     return(
         <div>
             <GridList 
-            cellHeight={160} 
+            cellHeight={300} 
             className={classes.gridList} 
             cols={3}>
             {tileData.map((tile) => (

@@ -38,7 +38,7 @@ function Buttons(){
                 container 
                 justify="center"
                 alignItems="center" 
-                spacing={4}>
+                spacing={1}>
                 <Grid item>
                     <Button 
                         variant='contained' 
