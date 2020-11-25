@@ -10,7 +10,6 @@ function DashboardPage(){
             <Header />
             <AccSettings />
             <WelcomeTxt />
-            { /*<Buttons />*/ }
         </div>
     );
 }

@@ -1,14 +1,24 @@
 import React from 'react'
 import styled from 'styled-components'
+import Buttons from './Buttons'
 
 const TextContainer = styled.div`
     position: absolute;    
-    width: auto;
+    width: 50%;
     height: auto;
-    left: calc(50%);
+    left: calc(25%);
+    right: calc(25%);
     top: calc(50%/2);
-    margin-left: -11%;
+    margin-left: 15%;
 `
+
+const ButtonContainer = styled.div`
+    position: absolute;    
+    width: 50%;
+    height: auto;
+    top: 150%;
+`
+
 const Welcome = styled.div`
     font-family: Pier Sans;
     font-size: 60px;
@@ -20,6 +30,7 @@ function WelcomeTxt(){
     return(
         <TextContainer>
             <Welcome>Hello, John Smith</Welcome> {/* Retrieve User's Name */}
+            <ButtonContainer><Buttons /></ButtonContainer>
         </TextContainer>
     );
 }

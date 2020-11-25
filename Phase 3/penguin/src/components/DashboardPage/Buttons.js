@@ -1,40 +1,71 @@
 import React from 'react'
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles'
+import { Link } from 'react-router-dom'
+import Grid from '@material-ui/core/Grid';
+import { HomeRoute } from '../../Routing'
+
+
+const theme = createMuiTheme({
+    palette: {
+      default:{
+        main: '#6CA0FF',
+        contrastText: '#FFFFFF',
+      },
+      primary: {
+        main: '#9EC1FF',
+        contrastText: '#FFFFFF',
+      },
+      secondary: {
+          main: '#9A9DA6',
+          contrastText: '#FFFFFF',
+      },
+    },
+    shadows: Array(25).fill('none'),
+    typography: {
+        fontFamily: 'Pier Sans',
+        fontStyle: 'normal',
+        fontWeight: 'Bold',
+        fontSize: 20,
+      },
+  });
 
 const joinContainer = styled.div`
     position: absolute;
-    width: 310px;
-    height: 60px;
-    left: 374px;
-    top: 452px;
-`
-const hostContainer = styled.div`
-    position: absolute;
-    width: 310px;
-    height: 60px;
-    left: 756px;
-    top: 452px;
+    width: auto;
+    height: auto;
 `
 
-const buttonText = styled.div`
-    position: absolute;
-    width: 309px;
-    height: 30px;
-    left: calc(50% - 309px/2 - 191.5px);
-    top: calc(50% - 30px/2 - 30px);
-
-    font-family: Pier Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-
-    color: #FFFFFF;
-`
 
 function Buttons(){
-   
+    return(
+        <MuiThemeProvider>   
+               <Grid 
+                container 
+                justify="center"
+                alignItems="center" 
+                spacing={1}>
+                <Grid item>
+                    <Button 
+                        variant='contained' 
+                        size = "large"
+                        id="login" 
+                        color="secondary"
+                        component={Link} to='/dashboard'>Host a Meeting
+                    </Button>
+                </Grid>
+                <Grid item>
+                    <Button
+                        variant= 'contained'
+                        size = "large" 
+                        id="signup" 
+                        color = "primary"
+                        component={Link}to='/registration'>Join a Meeting
+                    </Button>
+                </Grid>
+                </Grid>
+        </MuiThemeProvider>
+    );
 }
 export default Buttons
