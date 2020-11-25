@@ -31,13 +31,6 @@ const theme = createMuiTheme({
       },
   });
 
-const joinContainer = styled.div`
-    position: absolute;
-    width: auto;
-    height: auto;
-`
-
-
 function Buttons(){
     return(
         <MuiThemeProvider>   
@@ -52,7 +45,7 @@ function Buttons(){
                         size = "large"
                         id="login" 
                         color="secondary"
-                        component={Link} to='/dashboard'>Host a Meeting
+                        component={Link} to=''>Host a Meeting
                     </Button>
                 </Grid>
                 <Grid item>
@@ -61,7 +54,7 @@ function Buttons(){
                         size = "large" 
                         id="signup" 
                         color = "primary"
-                        component={Link}to='/registration'>Join a Meeting
+                        component={Link}to=''>Join a Meeting
                     </Button>
                 </Grid>
                 </Grid>
