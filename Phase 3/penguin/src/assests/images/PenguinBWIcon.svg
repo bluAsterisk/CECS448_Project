@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?> <!-- Created with Vectornator for iOS (http://vectornator.io/) --><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" version="1.1" viewBox="0 0 510.3 396.9">
+<metadata>
+<vectornator:setting key="RulersVisible" value="1"/>
+<vectornator:setting key="Units" value="Points"/>
+<vectornator:setting key="DynamicGuides" value="1"/>
+<vectornator:setting key="GuidesVisible" value="1"/>
+<vectornator:setting key="CMYKEnabledKey" value="0"/>
+<vectornator:setting key="SnapToGuides" value="1"/>
+<vectornator:setting key="GridSpacing" value="36"/>
+</metadata>
+<defs/>
+<g id="Layer 1" vectornator:layerName="Layer 1">
+<path d="M141.852+231.562C142.707+169.098+192.847+118.451+255.752+118.451C318.658+118.451+367.667+167.111+369.335+229.559C370.597+276.775+329.371+320.176+329.371+320.176C329.371+320.176+372.385+178.467+300.684+161.84C264.286+153.399+254.428+206.048+254.428+206.048C254.428+206.048+245.726+151.616+206.808+161.612C144.695+177.566+179.27+318.266+179.27+318.266C179.27+318.266+141.064+289.193+141.852+231.562Z" fill-rule="evenodd" fill="#303030" opacity="1"/>
+<path d="M252.804+264.486L243.566+247.955C242.682+246.373+243.434+245.091+245.246+245.091L263.562+245.091C265.374+245.091+266.126+246.373+265.242+247.955L256.005+264.486C255.121+266.068+253.687+266.068+252.804+264.486Z" fill-rule="evenodd" fill="#5e5f70" opacity="1"/>
+<path stroke="#000000" fill-rule="evenodd" stroke-width="1" d="M204.868+219.684C204.868+213.03+208.147+207.636+212.191+207.636C216.235+207.636+219.514+213.03+219.514+219.684C219.514+226.337+216.235+231.731+212.191+231.731C208.147+231.731+204.868+226.337+204.868+219.684Z" fill="#000000" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+<path stroke="#000000" fill-rule="evenodd" stroke-width="1" d="M288.608+219.424C288.608+212.77+291.886+207.377+295.931+207.377C299.975+207.377+303.254+212.77+303.254+219.424C303.254+226.078+299.975+231.472+295.931+231.472C291.886+231.472+288.608+226.078+288.608+219.424Z" fill="#000000" stroke-linecap="round" opacity="1" stroke-linejoin="round"/>
+</g>
+</svg>
