@@ -60,7 +60,8 @@ function Buttons(){
                         variant="contained" 
                         id="getStarted"
                         size="large" 
-                        color="primary" >
+                        color="primary" 
+                        component={Link} to={RegistrationPage}>
                             Get Started
                     </Button>
                 </GetStartedContainer>
