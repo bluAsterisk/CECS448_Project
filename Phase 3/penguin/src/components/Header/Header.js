@@ -4,8 +4,8 @@ import Logo from './Logo'
 
 const Container = styled.div`
     background-color: ${({ theme }) => theme.primary};
-    position: fixed;
     height: 88px;
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: start;

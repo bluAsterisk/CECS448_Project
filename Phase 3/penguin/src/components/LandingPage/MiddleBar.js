@@ -3,13 +3,14 @@ import styled from 'styled-components'
 import Image from '../../assests/images/monitor.png'
 
 const Container = styled.div`
-    background-color: ${({ theme }) => theme.secondary};
+    background-color: #F5F5F5;
     position: absolute;
-    right:0;
     height: 518px;
+    right: 0px;
     left: 0px;
     top: 88px;
 `
+
 const Slogan = styled.div`
     position: absolute;
     width: 333px;
@@ -24,8 +25,8 @@ const Slogan = styled.div`
 `
 const Monitor = styled.img`
     position: absolute;
-    right: 100px;
-    top: 50px;
+    right: 160px;
+    top: 70px;
 `
 
 function MiddleBackground(){

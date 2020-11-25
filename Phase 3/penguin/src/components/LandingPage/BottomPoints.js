@@ -10,8 +10,11 @@ const BottomContainer = styled.div`
     position: absolute;
     width: auto;
     height: 518px;
+    left: 5%;
+    right: 6%;
     padding-left: 0px;
-    padding-top: 650px;
+    padding-top: 580px;
+    
 `
 const Column = styled.div`
     float: left;

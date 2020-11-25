@@ -55,17 +55,21 @@ function Buttons(){
     return(
         <MuiThemeProvider>
                 <GetStartedContainer>
-                    <Button 
+                    <Button
+                        style={{maxWidth: '190px', maxHeight: '50px', minWidth: '100px', minHeight: '50px', fontSize: '20px'}} 
                         variant="contained" 
-                        id="getStarted" 
+                        id="getStarted"
+                        size="large" 
                         color="primary" >
                             Get Started
                     </Button>
                 </GetStartedContainer>
                 <LoginContainer>
-                    <Button 
+                    <Button
+                        style={{maxWidth: '150px', maxHeight: '50px', minWidth: '150px', minHeight: '50px', fontSize: '22px'}} 
                         variant="contained" 
                         id="login" 
+                        size="large" 
                         color="secondary"
                         component={Link} to={LoginPage}
                         >
@@ -73,9 +77,11 @@ function Buttons(){
                     </Button>
                 </LoginContainer>
                 <SignUpContainer>
-                    <Button 
+                    <Button
+                        style={{maxWidth: '150px', maxHeight: '50px', minWidth: '150px', minHeight: '50px', fontSize: '22px'}}  
                         variant= "contained" 
                         id="signup" 
+                        size="large" 
                         component={Link} to={RegistrationPage}
                         color="primary">
                             Sign Up
