@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Image from '../../assests/images/penguinIcon.png'
+import Grid from '@material-ui/core/Grid';
 
 const Container = styled.div`
     margin-top: 17px;
@@ -10,11 +11,6 @@ const PenguinIcon = styled.img`
 
 `
 const PenguinName = styled.div`
-    position: absolute;
-    width: 131px;
-    height: 43px;
-    left: 80px;
-    top: 23px;
     font-family: "Pier Sans";
     font-style: normal;
     font-weight: bold;
@@ -24,10 +20,17 @@ const PenguinName = styled.div`
 `
 function Logo(){
     return(
-        <Container>
-            <PenguinIcon src={Image} />
-            <PenguinName>Penguin</PenguinName>
-        </Container>
+        
+        <Grid 
+            container 
+            justify="center"
+            alignItems="center" 
+            spacing={1}>
+                
+                <Grid item><PenguinIcon src={Image} /></Grid>
+                <Grid item><PenguinName>Penguin</PenguinName></Grid>
+
+        </Grid>
     );
 }
 export default Logo
