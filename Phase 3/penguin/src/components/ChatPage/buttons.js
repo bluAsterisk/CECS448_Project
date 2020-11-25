@@ -8,19 +8,19 @@ export default function buttons(){
     return(
         <div>
             <Button>
-                <MicNoneOutlinedIcon style={{ fontSize: 60 }}/>
+                <MicNoneOutlinedIcon style={{ fontSize: 50 }}/>
             </Button>
             <Button>
-                <VideocamOffOutlinedIcon style={{ fontSize: 60 }}/>
+                <VideocamOffOutlinedIcon style={{ fontSize: 50 }}/>
             </Button>
             <Button size='xlarge'>
-                <PersonalVideoOutlinedIcon style={{ fontSize: 60 }}/>
+                <PersonalVideoOutlinedIcon style={{ fontSize: 50 }}/>
             </Button>
             <Button
                 variant='contained' 
                 size = "large"
                 id="login" 
-                color="secondary"> Leave Meeting
+                color="secondary">Leave Meeting
             </Button>
         </div>
     )

@@ -1,16 +1,12 @@
 import React from 'react';
 import Header from '../Header/Header'
-import Button from '@material-ui/core/Button'
-import Buttons from './buttons'
+import Buttons from './Buttons'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import image from '../../assests/images/PenguinBWIcon.svg';
-import MicNoneOutlinedIcon from '@material-ui/icons/MicNoneOutlined';
-import VideocamOffOutlinedIcon from '@material-ui/icons/VideocamOffOutlined';
-import PersonalVideoOutlinedIcon from '@material-ui/icons/PersonalVideoOutlined';
 
 const useStyles = makeStyles((theme) => ({
     root: {
