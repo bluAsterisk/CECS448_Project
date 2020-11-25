@@ -13,8 +13,7 @@ function DashboardPage(){
             <Header />
             <AccSettings />
             <Container maxWidth="sm"> 
-            
-            <center><WelcomeTxt></WelcomeTxt></center> 
+                <center><WelcomeTxt></WelcomeTxt></center> 
             <Buttons />
             </Container>
         </div>
