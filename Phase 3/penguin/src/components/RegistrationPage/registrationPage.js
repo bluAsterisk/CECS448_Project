@@ -5,19 +5,21 @@ import SideBar from './SideBar';
 import Grid from '@material-ui/core/Grid'
 import RegistrationForm from './RegistrationForm'
 import AlreadyHaveAccount from './AlreadyHaveAccount'
-import {LoginPage} from '../../Routing'
+import { withFirebase } from '../Firebase';
+
+
 
 function RegistrationPage(){
     return(
         <div>
             <Header/>
             <SideBar/>
-            <Grid container spacing = {0} direction = "column" justify="center" alignItems="center">
+            <Grid container spacing = {6} direction = "column" justify="center" alignItems="center">
                 <Grid item>
                     <AlternateSignupButtons/>
                 </Grid>
                 <Grid item>
-                    <RegistrationForm/>
+                   <RegistrationForm/>
                 </Grid>
                 <Grid item>
                     <AlreadyHaveAccount/>
