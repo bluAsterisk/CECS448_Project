@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../Header/Header'
+import Logo from '../Header/Logo'
 import Buttons from './Buttons'
 import TextField from '@material-ui/core/TextField';
 import TextFieldPassword from './TextFieldPassword'
@@ -11,7 +11,14 @@ import SideBar from '../RegistrationPage/SideBar';
 function LoginPage(){
     return(
         <div>
-            <Header />
+            <Grid container
+            direction="row" 
+            justify="leflex-start"
+            alignItems="center">
+                <Grid item>
+                    <Logo/>
+                </Grid>
+            </Grid>
             <SideBar />
             <Grid 
                 container 
