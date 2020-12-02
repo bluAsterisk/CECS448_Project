@@ -23,3 +23,8 @@ npm install react-router-dom --save
 ```
 //install firebase
 npm install firebase
+
+//build, test, and deploy
+yarn build
+firebase serve
+firebase deploy
