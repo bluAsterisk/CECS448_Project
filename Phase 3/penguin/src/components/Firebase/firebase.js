@@ -13,11 +13,25 @@ const firebaseConfig = {
     measurementId: "G-E1JBWBSPRG"
   };
 
-  class Firebase{
-      constructor()
-      {
-          app.initializeApp(firebaseConfig);
-      }
+class Firebase{
+    constructor()
+    {
+        app.initializeApp(firebaseConfig);
+
+        this.auth = app.auth();
+    }
+
+    doCreateUserWithEmailAndPassword = (email, password) =>
+        this.auth.createUserWithEmailAndPassword(email, password);
+
+    doSignInWithEmailAndPassword = (email, password) =>
+        this.auth.doSignInWithEmailAndPassword(email, password);
+    
+    sendPasswordResetEmail = (email) =>
+        this.auth.sendPasswordResetEmail(email);
+
+    doSignOut = () => this.auth.signOut();
+
   }
 
   export default Firebase

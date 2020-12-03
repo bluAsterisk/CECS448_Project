@@ -47,7 +47,7 @@ class RegistrationBase extends Component{
         this.props.firebase
             .doCreateUserWithEmailAndPassword(email, password)
             .then(authUser => {
-                this.setState({ ... INITIAL_STATE });
+                this.setState({ ...INITIAL_STATE });
                 this.props.history.push(ROUTES.LoginPage);
             })
             .catch(error => {

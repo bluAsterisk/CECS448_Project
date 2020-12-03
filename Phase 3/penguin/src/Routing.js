@@ -7,12 +7,14 @@ import loginPage from '../src/components/LoginPage/loginPage'
 import registrationPage from '../src/components/RegistrationPage/registrationPage'
 import dashboardPage from '../src/components/DashboardPage/dashboardPage'
 import chatPage from './components/ChatPage/chatPage';
+import forgotPasswordPage from '../src/components/ForgotPasswordPage/forgotPasswordPage'
 
 export const HomeRoute = "/";
 export const LoginPage = "/login/";
 export const RegistrationPage = "/registration/"
 export const DashboardPage = "/dashboard/"
 export const ChatPage = "/chat/"
+export const ForgotPasswordPage= "/recovery/"
 
 class Routing extends React.Component {
     render() {
@@ -22,7 +24,8 @@ class Routing extends React.Component {
                 <Route path={LoginPage} component={loginPage} />
                 <Route path={RegistrationPage} component={registrationPage}/>
                 <Route path={DashboardPage} component={dashboardPage}/>
-                <Route path={ChatPage} component={chatPage}></Route>
+                <Route path={ChatPage} component={chatPage}/>
+                <Route path={ForgotPasswordPage} component={forgotPasswordPage}/>
             </div>
         );
     }

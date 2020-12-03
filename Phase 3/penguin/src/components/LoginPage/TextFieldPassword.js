@@ -1,19 +1,22 @@
 import React, {Component} from 'react';
 import {Redirect, withRouter} from 'react-router-dom'
+import {Link as LinkReact} from 'react-router-dom'
 import {withFirebase} from '../Firebase'
 import { makeStyles } from '@material-ui/core/styles';
 import InputAdornment from '@material-ui/core/InputAdornment';
-import FormControl from '@material-ui/core/FormControl';
 import IconButton from '@material-ui/core/IconButton';
 import Grid from '@material-ui/core/Grid'
 import TextField from '@material-ui/core/TextField'
 import {compose} from 'recompose'
-import {DashboardPage} from '../../Routing'
+import {DashboardPage, ForgotPasswordPage} from '../../Routing'
 import Lock from '@material-ui/icons/Lock'
 import Person from '@material-ui/icons/Person'
-import Visible from '@material-ui/icons/Visibility'
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
+import Box from '@material-ui/core/Box'
+import Linker from '@material-ui/core/Link'
+import ButtonBase from '@material-ui/core/ButtonBase'
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,6 +44,11 @@ const INITIAL_STATE = {
   error:null,
   visible:'false',
 }
+const ForgotStyle = styled.div`
+  width: 240px;
+  height:15px;
+  text-align:right;
+`
 
 
 const LoginContainer = styled.div`
@@ -106,6 +114,7 @@ class LoginForm extends Component{
 
       const isInvalid = password ==='' || email ==='';
 
+
       return (
         <form onSubmit = {this.onSubmit}>
         <div>
@@ -153,8 +162,24 @@ class LoginForm extends Component{
                       ),
                     }}
                     />
-                  </Grid>
 
+                  </Grid>
+                </Grid>
+                  <Box m = {1} textAlign = "right" 
+                  paddingBottom={3}
+                  color = "#1E90FF">
+                    <ForgotStyle>
+                      <ButtonBase component={LinkReact} to = {ForgotPasswordPage}>
+                        Forgot Password
+                      </ButtonBase>
+                    </ForgotStyle>
+                  </Box>
+                <Grid container
+                spacing = {4}
+                direction = "column"
+                alignItems = "center"
+                justify = "center"
+                >
                   <Grid item>
                     <LoginContainer>
                         <Button 
