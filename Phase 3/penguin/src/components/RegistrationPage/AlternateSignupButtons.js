@@ -8,14 +8,6 @@ import {LoginPage} from '../../Routing'
 import {Link} from 'react-router-dom'
 
 
-const RegisterText = styled.h1`
-    left: 31%;
-    top: 14%;
-    font-size:40px;
-    font-weight: bold;
-    box-sizing: border-box;
-
-`
 
 const FacebookContainer = styled.div`
     width: 295px;
@@ -36,9 +28,6 @@ function AlternateSignupButtons(){
         <BrowserRouter>
             <div>
                 <Grid container spacing = {2} direction="column" alignItems= "center" justify="center">
-                <Grid item>
-                    <RegisterText>Register</RegisterText>
-                </Grid>
                 <Grid container item spacing = {8} direction="row" alignItems="center" justify="center">
                     <Grid item>
                         <FacebookContainer>
@@ -58,7 +47,6 @@ function AlternateSignupButtons(){
                         <Button variant="contained" 
                         color="primary" 
                         id="GoogleButton"
-                        component={Link} to={LoginPage}
                         style={{textTransform: 'none', 
                                 backgroundColor: '#1E90FF', 
                                 borderRadius:'12px', 

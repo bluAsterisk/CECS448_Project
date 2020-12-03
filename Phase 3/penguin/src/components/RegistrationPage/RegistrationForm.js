@@ -9,7 +9,7 @@ import Email from '@material-ui/icons/Email'
 import Lock from '@material-ui/icons/Lock'
 import Button from '@material-ui/core/Button'
 import {LoginPage} from '../../Routing'
-import {Link, withRouter} from 'react-router-dom'
+import {Link, withRouter, Redirect} from 'react-router-dom'
 import * as ROUTES from '../../Routing'
 import {withFirebase} from '../Firebase'
 import {compose} from 'recompose'
@@ -20,6 +20,7 @@ const CreateAccountContainer = styled.div`
     height: 60px;
     box-sizing: border-box;
 `
+
 const RegistrationForm = () => (
     <Registration/>
 )

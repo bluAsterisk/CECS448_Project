@@ -6,23 +6,41 @@ import Grid from '@material-ui/core/Grid'
 import RegistrationForm from './RegistrationForm'
 import AlreadyHaveAccount from './AlreadyHaveAccount'
 import { withFirebase } from '../Firebase';
+import styled from 'styled-components'
+import Box from '@material-ui/core/Box'
 
+
+
+const RegisterText = styled.h1`
+    left: 31%;
+    top: 14%;
+    font-size:40px;
+    font-weight: bold;
+    box-sizing: border-box;
+
+`
 
 
 function RegistrationPage(){
     return(
         <div>
-            <Grid container
-            direction="row" 
-            justify="leflex-start"
-            alignItems="center">
-                <Grid item>
-                    <Logo/>
+            <Box m = {2}>
+                <Grid container
+                direction="row" 
+                justify="left"
+                alignItems="center">
+                    <Grid item>
+                        <Logo />
+                    </Grid>
                 </Grid>
-            </Grid>
-           
+            </Box>
             <SideBar/>
             <Grid container spacing = {6} direction = "column" justify="center" alignItems="center">
+            
+                <Grid item>
+                    <RegisterText>Register</RegisterText>
+                </Grid>
+
                 <Grid item>
                     <AlternateSignupButtons/>
                 </Grid>
