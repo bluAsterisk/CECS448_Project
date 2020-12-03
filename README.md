@@ -21,3 +21,5 @@ npm install
 //to set up router
 npm install react-router-dom --save
 ```
+//install firebase
+npm install firebase
