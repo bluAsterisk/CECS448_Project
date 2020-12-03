@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "penguin/public",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
