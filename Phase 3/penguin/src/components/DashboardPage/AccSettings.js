@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
+import Grid from '@material-ui/core/Grid'
+
+
 
 const SettingsLink = styled.div`
-    position: absolute;
-    width: 155px;
-    height: 24px;
-    right: 50px;
-    top: 20px;
-
     font-family: Pier Sans;
     font-style: normal;
     font-weight: normal;

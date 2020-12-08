@@ -8,14 +8,13 @@ const Container = styled.div`
     padding: 15px;
 `
 
-const PenguinName = styled.div`
-    position: absolute;
-    font-family: "Pier Sans";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    color: "#303030";
-`
+// const PenguinName = styled.div`
+//     font-family: "Pier Sans";
+//     font-style: normal;
+//     font-weight: bold;
+//     font-size: 36px;
+//     color: "#303030";
+// `
 
 function Header(){
     return(
@@ -23,7 +22,7 @@ function Header(){
             <Grid 
             container
             direction="row" 
-            justify="leflex-start"
+            justify="flex-start"
             alignItems="center"
             spacing={4}>
                 

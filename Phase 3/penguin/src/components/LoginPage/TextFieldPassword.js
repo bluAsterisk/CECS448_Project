@@ -14,7 +14,6 @@ import Person from '@material-ui/icons/Person'
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
 import Box from '@material-ui/core/Box'
-import Linker from '@material-ui/core/Link'
 import ButtonBase from '@material-ui/core/ButtonBase'
 
 
@@ -88,7 +87,7 @@ class LoginForm extends Component{
     .doSignInWithEmailAndPassword(email,password)
     .then(() => {
       this.setState({...INITIAL_STATE});
-      this.props.history.push(DashboardPage);
+      <Redirect to= {DashboardPage} />
     })
     .catch(error=> {
       this.setState({error});
