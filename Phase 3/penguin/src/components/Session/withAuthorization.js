@@ -1,7 +1,8 @@
-import React from 'react'
+import React, {Redirect} from 'react'
 import {withRouter} from 'react-router-dom'
 import {compose} from 'recompose'
 
+import AuthUserContext from './context'
 import {withFirebase} from '../Firebase'
 import Routing, {HomeRoute} from '../../Routing'
 
@@ -11,7 +12,7 @@ const withAuthorization = condition => Component => {
             this.listener = this.props.firebase.auth.onAuthStateChanged(
                 authUser => {
                     if(!condition(authUser)) {
-                        <Redirect to ={HomeRoute}/>
+                        this.props.history.push({HomeRoute})
                     }
                 },
             );
@@ -24,7 +25,12 @@ const withAuthorization = condition => Component => {
 
         render() {
             return (
-                <Component {...this.props} />
+                <AuthUserContext.Consumer>
+                    {authUser =>
+                    condition(authUser) ? <Component {...this.props} /> : null
+                    }
+
+                </AuthUserContext.Consumer>
             );
         }
     }

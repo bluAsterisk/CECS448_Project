@@ -7,9 +7,10 @@ import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import LogOutButton from '../SignOut'
 import Box from '@material-ui/core/Box'
+import {withAuthorization} from '../Session'
 
 
-
+const condition = authUser => !!authUser;
 
 function DashboardPage(){
     return(
@@ -47,4 +48,4 @@ function DashboardPage(){
     );
 }
 
-export default DashboardPage
+export default withAuthorization(condition)(DashboardPage);

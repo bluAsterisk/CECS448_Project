@@ -87,7 +87,7 @@ class LoginForm extends Component{
     .doSignInWithEmailAndPassword(email,password)
     .then(() => {
       this.setState({...INITIAL_STATE});
-      <Redirect to= {DashboardPage} />
+      this.props.push.history({DashboardPage})
     })
     .catch(error=> {
       this.setState({error});

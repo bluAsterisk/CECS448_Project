@@ -7,6 +7,7 @@ import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 import GridListTileBar from '@material-ui/core/GridListTileBar';
 import image from '../../assests/images/PenguinBWIcon.svg';
+import {withAuthorization} from '../Session'
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -45,7 +46,9 @@ const tileData = [
   },
 ];
 
-export default function ChatPage(){
+const condition = authUser => !!authUser;
+
+function ChatPage(){
     const classes = useStyles();
     return(
         <div>
@@ -74,3 +77,6 @@ export default function ChatPage(){
         </div>
     )
 }
+
+
+export default withAuthorization(condition)(ChatPage);
