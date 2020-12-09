@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../Header/Header'
 import Buttons from './Buttons'
+import Chatlog from './Chatlog'
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import GridList from '@material-ui/core/GridList';
@@ -73,10 +74,13 @@ function ChatPage(){
                     </GridList>
                     <Buttons />
                 </Grid>
+                <Grid item>
+                  <Chatlog />
+                </Grid>
             </Grid>
+            
         </div>
     )
 }
-
 
 export default withAuthorization(condition)(ChatPage);

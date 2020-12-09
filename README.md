@@ -20,11 +20,16 @@ npm install
 
 //to set up router
 npm install react-router-dom --save
-```
+
 //install firebase
 npm install firebase
+yarn add react-firebase-hooks
+
+//react speech recognition
+yarn add react-speech-recognition
 
 //build, test, and deploy
 yarn build
 firebase serve
 firebase deploy
+```

@@ -1,6 +1,7 @@
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 import app from 'firebase/app'
 import 'firebase/auth'
+import 'firebase/firestore';
 
 const firebaseConfig = {
     apiKey: "AIzaSyCJdvmsy8yGvQjhGM6C79qsnnFp29aYfjI",
@@ -19,6 +20,7 @@ class Firebase{
         app.initializeApp(firebaseConfig);
 
         this.auth = app.auth();
+        this.firestore = app.firestore();
     }
 
     doCreateUserWithEmailAndPassword = (email, password) =>
