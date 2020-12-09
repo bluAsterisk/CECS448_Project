@@ -83,4 +83,4 @@ function ChatPage(){
     )
 }
 
-export default withAuthorization(condition)(ChatPage);
+export default ChatPage;
